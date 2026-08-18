@@ -8,9 +8,16 @@ temaActual = temaActual === 'claro' ? 'oscuro' : 'claro';
 botonTema.textContent = temaActual === 'claro' ? '🌙 Modo oscuro' : '☀ Modo claro';
 }
 function saludar() {
-const horaActual = new Date().getHours();
-// TODO: definir el mensaje según el rango de horaActual
-// TODO: asignar el mensaje a saludoElemento.textContent
+    const horaActual = new Date().getHours();
+  var mensaje = '';
+  if (horaActual > 6 && horaActual < 12) {
+    mensaje = 'buenos dias';
+  } else if (horaActual >= 12 && horaActual < 20) {
+    mensaje = 'buenas tardes';
+  } else {
+    mensaje = 'buenas noches';
+  }
+  saludoElemento.textContent = mensaje;
 }
 botonTema.addEventListener('click', cambiarTema);
 saludar();
