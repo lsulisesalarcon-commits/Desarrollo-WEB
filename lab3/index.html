@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web - Proyecto Capstone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="layout">
+
+    <header>
+        <p>
+            Esta landing page corresponde al primer laboratorio enfocado al desarrollo de su proyecto de ramo. 
+            En unidades posteriores esta página se integrará con el framework React y la API en Django REST Framework.
+        </p>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav__lista">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h1>Proyecto Capstone</h1>
+            <p>
+                Construir y estilizar la landing page inicial del proyecto capstone, aplicando elementos 
+                semánticos de HTML5, un formulario con validación nativa y CSS3.
+            </p>
+        </section>
+        
+        <section id="caracteristicas">
+            <h2>Características del Proyecto</h2>
+            <p>Resumen de las tres unidades principales del curso:</p>   
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Unidad</th>
+                        <th>Tecnología</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Unidad 1</td>
+                        <td>HTML5 + CSS3 + Flexbox</td>
+                        <td>En proceso</td>
+                    </tr>
+                    <tr>
+                        <td>Unidad 2</td>
+                        <td>React Front-End</td>
+                        <td>Pendiente</td>
+                    </tr>
+                    <tr>
+                        <td>Unidad 3</td>
+                        <td>Django REST Framework</td>
+                        <td>Pendiente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required minlength="10" rows="4"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <div>
+                <button type="button" id="boton-tema">boton tema</button>
+                <button type="button" id="saludo">saludar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Esto es mío - ulises.alarcon@cloud.uautonoma.cl - +56978522744</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
